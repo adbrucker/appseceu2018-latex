@@ -1,7 +1,7 @@
-# appseceu2017-latex
+# appseceu2018-latex
 
-LaTeX template mimicking the PowerPoint template for the OWASP AppSecEU 2017
-conference in Belfast.
+LaTeX template mimicking the PowerPoint template for the OWASP AppSecEU 2018
+conference in London.
 
 ## License
 
@@ -15,5 +15,5 @@ SPDX-License-Identifier: LPPL-1.3c+ OR BSD-2-Clause
 
 The master git repository for this project is hosted by the [Software
 Assurance & Security Research Team](https://logicalhacking.com):
-https://git.logicalhacking.com/adbrucker/appseceu2017-latex
+https://git.logicalhacking.com/adbrucker/appseceu2018-latex
 
