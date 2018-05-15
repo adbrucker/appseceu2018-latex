@@ -22,8 +22,8 @@
 \definecolor{linkedin}{RGB}{24,103,158}
 \definecolor{twitter}{RGB}{29,161,242}
 
-\definecolor{owaspOrange}{RGB}{228,108,10}
-\definecolor{owaspBlue}{RGB}{55,96,146}
+\definecolor{owaspHeading}{RGB}{5,127,175}
+\definecolor{owaspHighlight}{RGB}{101,203,191}
 
 \newcommand{\titlevisual}[1]{\titlegraphic{\includegraphics[width=\paperwidth,height=\paperheight]{#1}}}
 
@@ -417,7 +417,7 @@
 \NewEnviron{abstractframe}[1][]{%
 % \begin{frame}<beamer:0>{plain,label={fra:abstract-en},#1}
 \begin{frame}[label={fra:abstract-en},#1]
-     \begin{center}\LARGE\textcolor{owaspOrange}
+     \begin{center}\LARGE\textcolor{owaspHeading}
      {\inserttitle%
      \ifx\insertsubtitle\empty\relax%
       \else%
