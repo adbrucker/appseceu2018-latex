@@ -11,7 +11,13 @@
 %%   SPDX-License-Identifier: LPPL-1.3c+ OR BSD-2-Clause
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{beamerouterthemeappseceu2018}
-     [2018/05/15 v0.0  LaTeX presentation class mimicking the design of the OWASP AppSecEU 2018 PowerPoint template.]
+     [2018/05/15 v0.0  LaTeX presentation class mimicking the design
+     of the OWASP AppSecEU 2018 PowerPoint template.]
+
+\newcommand{\emphBox}[1]{\tikz[baseline={(a.base)}]\node[draw=owaspHighlight,%
+  rounded corners=0.5ex,fill=owaspHighlight,inner sep=1pt]
+   (a){\textcolor{lhWhite}{#1}};}
+
 \mode<presentation>
 
 \def\insertpresentationendframe{\inserttotalframenumber}
@@ -40,7 +46,17 @@
   % Headline and footline
   \defbeamertemplate*{headline}{owasp}{%
   \includegraphics[width=\paperwidth]{visuals/appseceu2018-running-head}
-  }
+  \begin{picture}(0,0)
+    \put(120,35){\Huge\textcolor{lhWhite}
+     {\inserttitle%
+       \ifx\insertsubtitle\empty\relax%
+       \else%
+         : \insertsubtitle%
+      \fi%
+    }};
+    \put(118,20){\emphBox{\large\insertshortauthor}}
+  \end{picture}
+}
 
   \defbeamertemplate*{footline}{owasp}{}
 
