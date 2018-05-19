@@ -68,24 +68,18 @@
   % \begin{beamercolorbox}[ht=10mm,sep=.2cm,ignorebg,wd=\@tempdima]{titlerule}
   % \end{beamercolorbox}
   \mbox{}\vspace{-8mm}%
-  {\mbox{\hspace{30mm}}%
-  \begin{beamercolorbox}[ht=27mm,sep=.1cm,center,wd=\@tempdima]{titleframe}
+  {\mbox{\hspace{40mm}}%
+  \begin{beamercolorbox}[ht=25mm,sep=.1cm,,wd=\@tempdima]{titleframe}
     {\usebeamercolor[fg]{title}\usebeamerfont{title}\inserttitle}%
     \ifx\insertsubtitle\@empty%
     \else%
       {\usebeamerfont{title}\usebeamercolor[fg]{title}: \insertsubtitle\vMaxPhantom\par}%
     \fi%
+     \begin{beamercolorbox}[sep=4pt,,wd=1.1\@tempdima,#1]{author}
+     \usebeamerfont{author}\usebeamercolor[fg]{author}\emphBox{\insertshortauthor}
+     \end{beamercolorbox}
     \vbox{}
     \vfill
-     \begin{beamercolorbox}[sep=4pt,center,wd=1.1\@tempdima,#1]{author}
-     \usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor
-     \end{beamercolorbox}
-     \begin{beamercolorbox}[sep=4pt,center,wd=1.1\@tempdima,#1]{institute}
-       \usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute
-     \end{beamercolorbox}
-    \begin{beamercolorbox}[sep=4pt,center,wd=1.1\@tempdima,#1]{date}
-      \usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate
-    \end{beamercolorbox}
   \end{beamercolorbox}
   \vspace{2mm}}
   \begin{beamercolorbox}[ht=\@tempdimb,wd=\@tempdima,ignorebg]{lhWhite}
